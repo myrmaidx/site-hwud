@@ -23,37 +23,29 @@
 		<link href="css/deltas.css" rel="stylesheet" type="text/css">
 		<title>New York</title>
 
+	<style> 
+			.container {
+			background-image: url("images/elbefront.jpg");
+			} </style>
 </head>
 
 <body>
-	<header>
-	<div role="navigation">
-  		<div id="menuToggle">
-
-    <input type="checkbox" />
-    
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <ul id="menu">
-      <a href="index.html"><li>Home</li></a>
-      <a href="about.html"><li>About</li></a>
-      <a href="contact.html"><li>Contact</li></a>
-      <a href="newyork.html"><li> New York</li></a>
-	  <a href="venice.html"><li> Venice </li></a>
-      <a href="delta.html"><li>Show me more</li></a>
-    </ul>
-  </div>
-</div>
-	</header>
-	
-	<slider> 
-		<slide> <p> New York </p> </slide> 
-		<slide> <p> New York </p></slide>
-		<slide> <p> New York </p></slide>
-		<slide> <p> New York </p></slide>
-	</slider>
+	<div class="container">
+	<ul class="nav">
+					<a class="fotolink" href="https://myrmaidx.github.io/site-hwud/index.html"> 
+            		<img class="fotolink"
+					src="images/deltareszwart.gif" alt="Deltares Deltas">
+					</a>
+		
+					<li> <a href="index.html">HOME</a></li>
+					<li> <a href="about.html">ABOUT</a></li>
+					<li> <a href="contact.html">CONTACT</a></li>
+					<li> <a href="deltaresproject.html">PROJECT </a> </li>
+					<li> <a href="delta.html"> DELTAS</a> </li>
+		<li> <a href="newyork.html"> NEW YORK </a> </li>
+		<li> <a href="venice.html"> VENICE </a> </li>
+		</ul>
+		
 	
 		<section class="wrapper">
 		<div class="process-wrapper">
@@ -147,7 +139,7 @@
 	});
 
 	$(".step01").click( function() {
-		$("#line-progress").css("width", "10%");
+		$("#line-progress").css("width", "9%");
 		$(".discovery").addClass("active").siblings().removeClass("active");
 	});
 
@@ -163,27 +155,15 @@
 
  
     </script>
-		
 	</section>
-	
-	<aside>
-			<div id="mapid">
-				<script>
-					var mymap = L.map('mapid').setView([45.4371908,12.3345898], 11);
-						
-					  L.tileLayer('https://api.mapbox.com/styles/v1/myrthezmind/ckiek1z4t3pp219pcrc4omaae/tiles/512/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibXlydGhlem1pbmQiLCJhIjoiY2s0OXh6NjU4MDludjNncGJia2Ntd3FhYyJ9.LC6ILa2Cu048SJm3X7bH8Q', {
-						  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery ©️ <a href="https://www.mapbox.com/">Mapbox</a>',
-						  maxZoom: 18,
-						  id: 'mapbox/streets-v11',
-						  tileSize: 512,
-						  zoomOffset: -1,
-						  accessToken:'pk.eyJ1IjoibXlydGhlem1pbmQiLCJhIjoiY2s0OXh6NjU4MDludjNncGJia2Ntd3FhYyJ9.LC6ILa2Cu048SJm3X7bH8Q'
-					  }).addTo(mymap);
-
-                </script>
-				</div>
-				</aside>
-	
+		
+	<slider> 
+		<slide> <p> New York </p> </slide> 
+		<slide> <p> New York </p></slide>
+		<slide> <p> New York </p></slide>
+		<slide> <p> New York </p></slide>
+	</slider>
+	</div>
 	</body>
 	
 </html>
