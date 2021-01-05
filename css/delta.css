@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+}
+
+body {
+	font-family: montserrat;
+	background-color: #f2f2f2;
+	margin: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	background-color: #64849d; 
+	display: block
+}
+
+
+/* menu */
+#menuToggle
+{
+  font-weight: 400;
+  display: block;
+  position: relative;
+  top: 14px;
+  left: 15px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+navigation { 
+top: 0;
+position: fixed;
+
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color: black;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: white;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgba(227,232,237,0.5);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* grid structure */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row div {
+  width: 50%;
+}
+
+.noMargin {
+  margin: 0px;
+}
+
+.one {
+background-image:url("../images/nycfront.jpg");
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+.two {
+background-image:url("../images/venicefront.jpg");
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+.three {
+background-image:url("../images/elbefront.jpg");
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+.four {
+background-image:url("../images/rhinefront.jpg");
+background-size: cover;
+background-position: center !important;
+height: 400px;
+}
+
+.five {
+background-image:url("../images/hochifront.jpg");
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+.six {
+background-image:url("../images/sandiego.jpg");
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+/* buttons within grid */
+
+.button {
+	width: 50%;
+	
+	margin-top: 75px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+	
+	border: 2px solid #FFFFFF;;
+	
+	background-color: transparent;
+}
+.button:hover {
+	background-color: #B4B4B1;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+.button a { 
+color: white;
+text-decoration: none;
+}

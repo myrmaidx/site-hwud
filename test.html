@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
+      integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
+      crossorigin=""></script>
+	
+<link href="test.css" rel="stylesheet" type="text/css">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<aside>
+		<div id="hudsonmap">
+		<script>
+		var hudsonmap=
+		L.map('hudsonmap').setView([40.730610, -73.935242], 6);
+		
+		L.esri.basemapLayer('Gray').addTo(hudsonmap);
+		L.esri.featureLater({
+		url:'https://services1.arcgis.com/0Lw2m57KEotYYFaA/arcgis/rest/services/Hudson_River_Estuary_Overview/FeatureServer'
+		}).addTo(hudsonmap);
+			
+		</script></div> </aside>
+</body>
+</html>

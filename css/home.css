@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* Body */
+
+html {
+	background-image: url("../images/deltagrass.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body, html {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+body {
+	font: montserrat;
+	font-family: montserrat;
+	margin: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	padding-left: 40px;
+}
+
+.nav {
+	height: 50px;
+	width: 100%;
+	
+	background-color: transparent;
+    list-style:none;
+    margin: 0 auto;
+	margin-top: 20px;
+	
+    text-align: left;
+	float: left;
+	
+	border-radius: 10px;
+}
+
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+}
+	
+.nav li {
+	text-align: inherit;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+
+.nav li a {
+    color: white;
+    text-align: center;
+    padding-top: 17px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    text-decoration: none;
+}
+
+ul li:hover a {
+color: #A26753;
+}
+
+.main {
+width: 100vw;
+height: 100vw;
+display: flex;
+justify-content: center;
+align-items: baseline;
+text-align: center;
+}
+
+.main h1 {
+	color: white;
+	letter-spacing: 20px;
+	font-size: 3em;
+	font-weight: 800;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.light {
+	font-weight: 800;
+	color: white;
+}
+
+.main button {
+	display: flex;
+	width: 250px;
+	background-color: transparent;
+	
+	font-size: 1em;	
+	text-decoration: none;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+	border-radius: 10px;
+	border: 3px solid #FFFFFF;
+	
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding: 2em;
+}
+
+.main button:hover {
+background-color: rgb(206,132,107,0.5);
+}
+.main button:hover a {
+cursor: pointer;
+}
+
+.main button a {
+text-decoration: none;
+color: white;
+letter-spacing: 2px;
+}
+
+.bold {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}

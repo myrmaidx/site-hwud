@@ -1,0 +1,327 @@
+body, html {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+}
+
+body {
+	font-family: montserrat;
+	background-color: #f2f2f2;
+	margin: 0px;
+	font-style: normal;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	background-color: #64849d; 
+	display: block
+}
+
+/* menu */
+#menuToggle
+{
+  font-weight: 400;
+  display: block;
+  position: relative;
+  top: 14px;
+  left: 15px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+navigation { 
+top: 0;
+position: fixed;
+
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color: black;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: white;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgba(227,232,237,0.5);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* end menu */
+/* --- Start progress bar --- */
+.wrapper {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.process-wrapper {
+	margin: auto;
+	max-width: 1080px;
+	max-height: 100%;
+}
+
+#progress-bar-container {
+	position: relative;
+	width: 90%;
+	margin: auto;
+	height: 100px;
+	margin-top: 65px;
+}
+
+#progress-bar-container ul {
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+	z-index: 9999;
+	position: absolute;
+	width: 100%;
+	margin-top: -40px
+}
+
+#progress-bar-container li:before {
+	content: " ";
+	display: block;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: solid 2px #aaa;
+	transition: all ease 0.3s;
+     
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #fff;
+       	 
+	background: #64849d; 
+}
+
+#progress-bar-container li {
+	list-style: none;
+	float: left;
+	width: 33%;
+	text-align: center;
+	color: #e3e8ed;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 700;
+	transition: all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+    font-size: 14px;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+#progress-bar-container li:after {
+	content:" ";
+	display: block;
+	
+	width: 6px;
+	height: 6px;
+	
+	background: #574742;
+	
+	margin: auto;
+	border: solid 7px #fff;
+	border-radius: 50%;
+	margin-top: 40px;
+	box-shadow: 0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+
+#progress-bar-container li:hover:after {
+	background: black;
+}
+
+#progress-bar-container li.active:after {
+	background: #1a93ad;
+}
+
+#progress-bar-container #line {
+	width: 80%;
+	margin: auto;
+	background: #eee;
+	height: 6px;
+	position: absolute;
+	left: 10%;
+	top: 57px;
+	z-index: 1;
+	border-radius: 50px;
+	transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+	content:" ";
+	width: 3%;
+	height: 100%; 
+	background: #1a93ad;
+	position: absolute;
+	z-index: 2;
+	border-radius: 50px;
+	transition: all ease 0.9s;
+}
+
+#progress-content-section {
+	width: 90%;
+	margin: auto;
+	background: #f3f3f3;
+	border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+	padding: 30px 40px;
+	text-align: center;
+}
+
+#progress-content-section .section-content h2 {
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 1px;
+}
+
+#progress-content-section .section-content p {
+	font-size: 16px;
+	line-height: 1.8em;
+	color: black;
+	text-align: left;
+}
+
+#progress-content-section .section-content {
+	display: none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode: forwards;
+	transform: translateY(15px);
+	opacity: 0;
+}
+
+#progress-content-section .section-content.active {
+	display: block;
+}
+
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+/* end progress bar*/
