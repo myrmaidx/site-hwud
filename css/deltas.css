@@ -108,12 +108,10 @@ color: rgba(100,132,157,1.00);
 }
 
 #progress-bar-container ul {
-	margin: 0;
-	padding-top: 150px;
+	margin-top: 110px;
 	z-index: 9999;
 	position: absolute;
 	width: 100%;
-	margin-top: -40px
 }
 
 #progress-bar-container li:before {
@@ -140,19 +138,18 @@ color: rgba(100,132,157,1.00);
 	float: left;
 	width: 33%;
 	text-align: center;
-	color: #e3e8ed;
+	color: #C4C5C6;
 	text-transform: uppercase;
 	cursor: pointer;
 	font-weight: 700;
 	transition: all ease 0.2s;
-	vertical-align:bottom;
-	height:60px;
+	vertical-align: bottom;
+	height: 60px;
 	position:relative;
 }
 
 #progress-bar-container li .step-inner {
-	padding-top: 150px;
-	
+	margin-top: 150px;
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -187,7 +184,7 @@ color: rgba(100,132,157,1.00);
 }
 
 #progress-bar-container li.active:after {
-	background: #1a93ad;
+	background: #64849d;
 }
 
 #progress-bar-container #line {
@@ -207,7 +204,7 @@ color: rgba(100,132,157,1.00);
 	content:" ";
 	width: 10%;
 	height: 100%; 
-	background: #1a93ad;
+	background: #64849d;
 	position: absolute;
 	z-index: 2;
 	border-radius: 50px;
@@ -219,7 +216,7 @@ color: rgba(100,132,157,1.00);
 	
 	width: 90%;
 	margin: auto;
-	background: #f3f3f3;
+	background-color: white;
 	border-radius: 10px;
 }
 
