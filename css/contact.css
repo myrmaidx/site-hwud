@@ -1,41 +1,6 @@
 @charset "UTF-8";
 /* Body */
 
-.container {
-	width: 100vw;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	display: fixed;
-}
-
-/* nav */
-ul li:hover a {
-color: #A26753;
-}
-
-/* image */
-.main {
-width: 100vw;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: baseline;
-text-align: center;
-}
-
-.main h1 {
-	color: white;
-	letter-spacing: 20px;
-	font-size: 3em;
-	font-weight: 800;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-
 .text_column {
 	width: 90%;
 	
@@ -87,11 +52,3 @@ border-radius: 5px;
 background-color: #e3e8ed;
 padding: 20px;
 }
-
-/* logo */
-.fotolink {
-margin-right: 50px;
-max-height: 60px;
-max-width: 60px;
-float: right;
-} 

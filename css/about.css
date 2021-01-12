@@ -5,55 +5,7 @@
 	margin: 0;
 }
 
-body, html {
-margin-top: 0px;
-height: 100%;
-width: 100%;
-overflow-x: hidden;
-}
-
-body {
-	font-family: montserrat;
-	background-color: white;
-	margin: 0;
-	font-style: normal;
-	font-weight: 200;
-}
-
-/* navigation hover*/
-ul li:hover a {
-color: rgba(100,132,157,1.00);
-}
-
-/* body stuff */
-.container {
-	width: 100vw;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	display: fixed;
-}
-
-.main {
-width: 100vw;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: baseline;
-text-align: center;
-}
-
-.main h1 {
-	color: white;
-	letter-spacing: 20px;
-	font-size: 3em;
-	font-weight: 800;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
+/* tekst gedeelte */
 .vervolg { 
 align-content: center;
 align-self: center;
