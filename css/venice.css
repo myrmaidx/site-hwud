@@ -14,45 +14,21 @@ height: 100%;
 width: 100%;
 }
 
-
-slide:nth-child(1) { 
-background-image: url("../images/venicehorizonsummer.jpg") !important;
-
+/*  map and other charts */
+.mapouter { 
+padding-bottom: 50px;
+position: relative;
+text-align:right; 
+height: 540px; 
+width: 800px;
+margin: 0;
 }
 
-slide:nth-child(2) {
-animation-delay: 2s;
-background-image: url("../images/venicewaterhorizon.jpg") !important;
-}
-
-slide:nth-child(3) { 
-background-image: url("../images/lagoonwater.jpg")!important;
-}
-
-slide:nth-child(4) { 
-left: 0%;
-animation-delay: 8s;
-background-image: url("../images/venicetallsummer.jpg");
-background-size: cover;
-background-position: center;
-}
-
-slide h3 {
-font-weight: 600;
-font-size: 100px;
-text-align: center;
-display: inline-block;
-width: 100%;
-margin-top: 340px;
-color: white;
-}
-
-@keyframes slide { 
-	0% { left: 100%; width: 100%;}
-	5% { left: 0%;}
-	25% { left: 0%;}
-	30% { left: -100%; width: 100%;}
-	30.0001% { left: -100%; width: 0%;}
-	100% { left: 100%; width: 0%;}
+.gmap_canvas {
+overflow: hidden;
+background: none!important;
+height: 540px;
+width: 800px;
+margin: 0;
 }
 

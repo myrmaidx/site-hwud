@@ -41,20 +41,12 @@ overflow-y: hidden;
 }
 
 .main button:hover {
-background-color: rgb(206,132,107,0.5);
-}
-.main button:hover a {
+background-color: rgba(206,132,107,0.5);
 cursor: pointer;
 }
 
-.main button a {
+.main button {
 text-decoration: none;
 color: white;
 letter-spacing: 2px;
-}
-
-.bold {
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
 }

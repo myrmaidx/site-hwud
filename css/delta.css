@@ -62,6 +62,7 @@ height: 400px;
 
 /* buttons within grid */
 .button {
+	color: white;
 	width: 50%;
 	
 	margin-top: 75px;
