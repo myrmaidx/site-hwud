@@ -38,15 +38,12 @@ overflow-y: hidden;
 	margin-bottom: auto;
 	margin-left: auto;
 	padding: 2em;
+	
+color: white;
+letter-spacing: 2px;
 }
 
 .main button:hover {
 background-color: rgba(206,132,107,0.5);
 cursor: pointer;
-}
-
-.main button {
-text-decoration: none;
-color: white;
-letter-spacing: 2px;
 }
