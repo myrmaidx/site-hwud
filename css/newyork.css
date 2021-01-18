@@ -42,3 +42,17 @@ width: 800px;
 height: 147px;
 margin-top: 10px;
 }
+
+.foto2 p {
+padding-bottom: 10px;
+}
+
+/* MEDIA QUERY PHONE */
+@media only screen and (max-width: 768px){
+	.foto { width: 300px;
+		height: 250px;
+		background-size: cover; }
+	
+	.foto2 { width: 300px;
+			height: 147px; }
+}
