@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Body */
 
+/* text */
 .text_column {
 	width: 90%;
 	
@@ -18,8 +19,8 @@
 	padding-top: 25px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-
+/* contact formulier, etc.
+Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
 width: 100%; /* Full width */
 	

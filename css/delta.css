@@ -12,6 +12,7 @@
   margin: 0px;
 }
 
+/* row one, new york */
 .one {
 background-image:url("../images/nycfront.jpg");
 border: 1px solid white;
@@ -20,6 +21,7 @@ background-position: center;
 height: 400px;
 }
 
+/* row one, venice */
 .two {
 background-image:url("../images/venicefront.jpg");
 border: 1px solid white;
@@ -28,6 +30,7 @@ background-position: center;
 height: 400px;
 }
 
+/* row two, hamburg */
 .three {
 background-image:url("../images/elbefront.jpg");
 border: 1px solid white;
@@ -36,6 +39,7 @@ background-position: center;
 height: 400px;
 }
 
+/* row two, rotterdam */ 
 .four {
 background-image:url("../images/rhinefront.jpg");
 border: 1px solid white;
@@ -44,6 +48,7 @@ background-position: center !important;
 height: 400px;
 }
 
+/* row three, ho chi minh */
 .five {
 background-image:url("../images/hochifront.jpg");
 border: 1px solid white;
@@ -52,6 +57,7 @@ background-position: center;
 height: 400px;
 }
 
+/* row three, san diego */
 .six {
 background-image:url("../images/sandiego.jpg");
 border: 1px solid white;
@@ -60,7 +66,7 @@ background-position: center;
 height: 400px;
 }
 
-/* buttons within grid */
+/* buttons within grid for easy access to deltas */
 .button {
 	color: white;
 	width: 50%;

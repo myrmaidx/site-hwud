@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* body */
 html, body { 
 width: 100%;
 height: 100%;
@@ -8,24 +9,7 @@ padding: 0;
 margin: 0px;
 }
 
-/*  map and other charts */
-.mapouter { 
-padding-bottom: 50px;
-position: relative;
-text-align:right; 
-height: 540px; 
-width: 800px;
-margin: 0;
-}
-
-.gmap_canvas {
-overflow: hidden;
-background: none!important;
-height: 540px;
-width: 800px;
-margin: 0;
-}
-
+/* pics with data and stuff */
 .foto {
 background-image: url("../images/Kaartnycriver.png");
 
@@ -45,6 +29,24 @@ margin-top: 10px;
 
 .foto2 p {
 padding-bottom: 10px;
+}
+
+/*  map and other charts */
+.mapouter { 
+padding-bottom: 50px;
+position: relative;
+text-align:right; 
+height: 540px; 
+width: 800px;
+margin: 0;
+}
+
+.gmap_canvas {
+overflow: hidden;
+background: none!important;
+height: 540px;
+width: 800px;
+margin: 0;
 }
 
 /* MEDIA QUERY PHONE */

@@ -6,12 +6,10 @@
 }
 
 /* button */
-
 .button { 
 position: absolute;
 top: 50%;
 }
- 
 
 .main button {
 	width: 250px;
@@ -53,7 +51,7 @@ letter-spacing: 2px;
 	letter-spacing: 2px;
 }
 
-/* text */
+/* text vervolg*/
 .vervolg { 
 align-content: center;
 align-self: center;

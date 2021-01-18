@@ -5,6 +5,7 @@
 	margin: 0;
 }
 
+/* body */
 body, html {
 height: 100%;
 width: 100%;
@@ -24,6 +25,7 @@ font-family: 'montserrat';
 	position: relative;
 }
 
+/* title for page */
 .main {
 width: 100vw;
 height: 100%;
