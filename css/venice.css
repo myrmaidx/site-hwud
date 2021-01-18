@@ -31,3 +31,12 @@ height: 540px;
 width: 800px;
 margin: 0;
 }
+
+.foto {
+background-image: url("../images/flooding_venice.png");
+width: 800px;
+height: 540px;
+z-index: 999;
+position: relative;
+margin-top: 10px;
+}

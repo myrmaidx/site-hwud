@@ -25,3 +25,20 @@ height: 540px;
 width: 800px;
 margin: 0;
 }
+
+.foto {
+background-image: url("../images/Kaartnycriver.png");
+
+width: 800px;
+height: 774px;
+position: relative;
+margin-top: 10px;
+}
+
+.foto2 {
+background-image: url("../images/Tabelnycriver-02.png");
+	
+width: 800px;
+height: 147px;
+margin-top: 10px;
+}

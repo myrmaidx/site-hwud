@@ -12,17 +12,19 @@
 
 #progress-bar-container {
 	position: relative;
-	width: 90%;
+	width: 80%;
 	margin: 0;
 	height: 100px;
 	margin-top: 0px;
+	text-align: center;
 }
 
 #progress-bar-container ul {
-	margin-top: 10px;
+	margin-top: 0px;
 	z-index: 9999;
 	position: absolute;
 	width: 100%;
+	text-align: center;
 }
 
 #progress-bar-container li:before {
@@ -39,7 +41,6 @@
 
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
 	border:solid 2px #fff;
-       	 
 	background: #64849d; 
 
 }
@@ -48,9 +49,11 @@
 	list-style: none;
 	float: left;
 	width: 33%;
+	
 	text-align: center;
 	color: #C4C5C6;
 	text-transform: uppercase;
+	
 	cursor: pointer;
 	font-weight: 700;
 	transition: all ease 0.2s;
@@ -60,7 +63,7 @@
 }
 
 #progress-bar-container li .step-inner {
-	margin-top: 10px;
+	margin-top: 0px;
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -72,19 +75,18 @@
 }
 
 #progress-bar-container li:after {
-
 	content:" ";
 	display: block;
 	
 	width: 6px;
 	height: 6px;
 	
-	background: #574742;
+	background: white;
 	
 	margin: auto;
-	border: solid 7px #fff;
+	border: solid 7px black;
 	border-radius: 50%;
-	margin-top: 50px;
+	margin-top: 40px;
 	transition:all ease 0.2s;
      
 }
@@ -94,13 +96,13 @@
 }
 
 #progress-bar-container li.active:after {
-	background: #64849d;
+	background: black;
 }
 
 #progress-bar-container #line {
-	width: 80%;
+	width: 90%;
 	margin: auto;
-	background: #eee;
+	background: #e3e8ed;
 	height: 6px;
 	position: absolute;
 	left: 10%;
@@ -112,7 +114,7 @@
 
 #progress-bar-container #line-progress {
 	content:" ";
-	width: 10%;
+	width: 9%;
 	height: 100%; 
 	background: #64849d;
 	position: absolute;
