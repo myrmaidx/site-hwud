@@ -7,9 +7,6 @@ html {
 	background-attachment: fixed;
 }
 
-body, html {
-overflow-y: hidden;
-}
 
 /*title */
 .light {

@@ -43,3 +43,32 @@ text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
+
+/* footer */
+.footer {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 190px;
+	gap: 0px 2px;
+	grid-template-areas:
+	  "fleft fmiddle fright";
+	background-color: rgba(227,232,237,0.5);
+	vertical-align: center;
+	text-align: center;
+	align-content: center;
+}
+
+.footer p{
+	color: black;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-weight: 400;
+}
+
+.footer p a{
+	color: black;
+	text-decoration: none;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-weight: 400;
+}
