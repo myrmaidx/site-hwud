@@ -153,3 +153,9 @@ footer {
 .hidden {
 display: none;
 }
+
+/* phone */
+@media only screen and (max-width: 812px) {
+
+}
+	
